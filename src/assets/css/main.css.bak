@@ -162,8 +162,3 @@ input[type="number"] {
   top: 60%;
   cursor: pointer;
 }
-
-.btn-create-user {
-  color: #0d6efd;
-  cursor: pointer;
-}

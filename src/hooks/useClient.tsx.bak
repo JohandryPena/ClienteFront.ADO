@@ -9,7 +9,6 @@ import {
 } from "../services/user.services";
 import { toast } from "sonner";
 import { getBase64 } from "../helpers/getBase64";
-import { postClienteSignup } from "../services/auth.services";
 
 export const useClient = ({
   type,
@@ -55,31 +54,6 @@ export const useClient = ({
         setError("");
         const response = await postClientes(handleFormat(state));
         if ("mensaje" in response) {
-          setError(response.mensaje);
-          throw new Error(response.mensaje);
-        } else {
-          handleUpdate();
-          handleClose();
-        }
-      } catch (error) {
-        setLoading(false);
-        throw error;
-      }
-    };
-    toast.promise(promise(), {
-      loading: "Loading...",
-      success: () => "Cliente creado exitosamente.",
-      error: () => "Error al crear el cliente.",
-    });
-  };
-
-  const handleCrearUserLogin = () => {
-    const promise = async (): Promise<void> => {
-      try {
-        setLoading(true);
-        setError("");
-        const response = await postClienteSignup(handleFormat(state));
-        if ("mensaje" in response && response.mensaje !== "Registro Exitoso") {
           setError(response.mensaje);
           throw new Error(response.mensaje);
         } else {
@@ -145,9 +119,6 @@ export const useClient = ({
       case "Crear":
         handleCrearUser();
         break;
-      case "Registrar":
-        handleCrearUserLogin();
-        break;
       case "Actualizar":
         handleUpdateUser();
         break;
@@ -195,9 +166,9 @@ const initState: User = {
   persona: {
     nombre: "",
     genero: "",
-    edad: 0,
-    tipoIdentificacion: 0,
-    identificacion: 0,
+    edad: "",
+    tipoIdentificacion: "",
+    identificacion: "",
     direccion: "",
     telefono: "",
   },

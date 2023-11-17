@@ -17,10 +17,3 @@ export const getClienteLoagueado = async (token: string) => {
     }
   }, true)
 }
-
-export const postClienteSignup = async (data: unknown) => {
-  return await customFetch(`${urlApi}/Seccion/Signup`, {
-    method: 'POST',
-    body: JSON.stringify(data)
-  }, true)
-}

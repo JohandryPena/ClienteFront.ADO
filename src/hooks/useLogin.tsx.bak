@@ -11,14 +11,10 @@ export const useLogin = () => {
     user: "",
     password: "",
   });
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const session = useContext(SessionContext);
   const userContext = useContext(UserContext);
   const navigate = useNavigate();
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
 
   const handleLogin = () => {
     if (user === "" || password === "")
@@ -52,10 +48,7 @@ export const useLogin = () => {
     user,
     loading,
     password,
-    isModalOpen,
     onChange,
-    openModal,
-    closeModal,
     handleLogin,
   };
 };

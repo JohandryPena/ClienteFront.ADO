@@ -1,5 +1,5 @@
 export interface IClient {
-  type: "Crear" | "Registrar" | "Actualizar" | "Eliminar" | "Ver";
+  type: "Crear" | "Actualizar" | "Eliminar" | "Ver";
   isOpen?: boolean;
   selected: number | undefined;
   onClose: () => void;

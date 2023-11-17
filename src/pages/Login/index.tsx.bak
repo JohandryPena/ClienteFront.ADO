@@ -1,19 +1,10 @@
+import { Link } from "react-router-dom";
 import TextFieldV1 from "../../components/TextField";
 import { useLogin } from "../../hooks/useLogin";
 import TextFieldPassword from "../../components/TextFieldPassword";
-import { ModalUser } from "../../components/ModalUser";
 
 const Login = () => {
-  const {
-    user,
-    loading,
-    password,
-    isModalOpen,
-    onChange,
-    openModal,
-    closeModal,
-    handleLogin,
-  } = useLogin();
+  const { user, password, onChange, handleLogin } = useLogin();
 
   return (
     <section className="container-login">
@@ -48,13 +39,18 @@ const Login = () => {
                     />
                   </div>
 
+                  <div className="col-12">
+                    <Link to="/auth/forgot" className="float-end">
+                      Olvidaste tu contraseña?
+                    </Link>
+                  </div>
+
                   <div className="col-12 mt-2">
                     <div className=" mt-4">
                       <button
                         type="submit"
                         className="btn btn-primary ms-auto float-end"
                         onClick={handleLogin}
-                        disabled={loading}
                       >
                         Iniciar Sesion
                       </button>
@@ -65,22 +61,13 @@ const Login = () => {
               <div className="card-footer py-3 border-0">
                 <div className="text-center">
                   ¿No tiene una cuenta?{" "}
-                  <a className="btn-create-user" onClick={openModal}>
-                    Create una
-                  </a>
+                  <Link to="/auth/register">Create una</Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <ModalUser
-        type={"Registrar"}
-        isOpen={isModalOpen}
-        selected={undefined}
-        onClose={closeModal}
-        handleUpdate={() => console.log("handleUpdate")}
-      />
     </section>
   );
 };
