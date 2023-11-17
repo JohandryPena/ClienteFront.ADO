@@ -1,0 +1,38 @@
+.table-tab-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.table-tab-user svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #596376;
+}
+
+.table-tab-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #596376;
+}
+
+.table-tab-user .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  min-width: 100px;
+}
+
+.table-tab-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 53px;
+}
+
+.table-tab-actions i {
+  margin-inline-start: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-size: 1rem;
+}
+
+.container-crud {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-crud header {
+  height: 60px;
+  background-color: #f8f9fa;
+}
+
+header .container-header-user {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .container-user svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #596376;
+}
+
+header .container-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #596376;
+}
+
+header .container-user-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.container-crud main {
+  height: calc(100vh - 160px);
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+main::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+main::-webkit-scrollbar-button:increment,
+main::-webkit-scrollbar-button {
+  display: none;
+}
+
+main::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+main::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.container-crud footer {
+  padding: 15px 0;
+  background-color: #f8f9fa;
+  color: #4b4c4d;
+}
+
+footer .social {
+  text-align: center;
+}
+
+footer .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+footer .social > a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+footer .social > a:hover {
+  opacity: 0.9;
+}
+
+footer .copyright {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+.container-login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para ocultar los botones en un input de tipo number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group .icon {
+  position: absolute;
+  right: 10px;
+  top: 60%;
+  cursor: pointer;
+}

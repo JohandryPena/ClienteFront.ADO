@@ -1,0 +1,64 @@
+.container-style-rounded {
+  display: grid;
+  justify-content: center;
+}
+
+.container-style-rounded .style-rounded {
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.container-style-rounded .style-rounded .label-choose-file-floating {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.container-style-rounded .style-rounded .choose-file-floating {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.container-style-rounded .style-rounded .image-style-rounded {
+  border-radius: 50%;
+}
+
+.container-style-rounded .style-rounded .image-style-rounded:hover {
+  transition: opacity 200ms;
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.container-style-rounded .style-rounded .label-choose-file-floating.uploaded {
+  opacity: 0;
+  transition: opacity 200ms, background-color 200ms;
+  background-color: rgba(118, 133, 151, 0.5);
+}
+
+.container-style-rounded
+  .style-rounded
+  .label-choose-file-floating.uploaded:hover {
+  opacity: 1;
+}
+
+.fill-blue {
+  fill: #15438c;
+}
+
+.fill-white {
+  fill: white;
+}

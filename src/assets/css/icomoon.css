@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?ucuvm6");
+  src: url("../fonts/icomoon.eot?ucuvm6#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?ucuvm6") format("truetype"),
+    url("../fonts/icomoon.woff?ucuvm6") format("woff"),
+    url("../fonts/icomoon.svg?ucuvm6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change ../fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+  content: "\e920";
+}
+.icon-tree-lines-collapse:before {
+  content: "\e91f";
+}
+.icon-squares:before {
+  content: "\e900";
+}
+.icon-businessman:before {
+  content: "\e901";
+}
+.icon-businessman-cash:before {
+  content: "\e902";
+}
+.icon-bussinesman-up:before {
+  content: "\e903";
+}
+.icon-iconprofile:before {
+  content: "\e904";
+}
+.icon-key:before {
+  content: "\e905";
+}
+.icon-location:before {
+  content: "\e906";
+}
+.icon-logout:before {
+  content: "\e907";
+}
+.icon-modules:before {
+  content: "\e908";
+}
+.icon-notification:before {
+  content: "\e909";
+}
+.icon-search:before {
+  content: "\e90a";
+}
+.icon-search2:before {
+  content: "\e90b";
+}
+.icon-squareplus:before {
+  content: "\e90c";
+}
+.icon-trash:before {
+  content: "\e90d";
+}
+.icon-tree-lines:before {
+  content: "\e90e";
+}
+.icon-email:before {
+  content: "\e90f";
+}
+.icon-eye:before {
+  content: "\e910";
+}
+.icon-locked:before {
+  content: "\e911";
+}
+.icon-user:before {
+  content: "\e912";
+}
+.icon-configuracion:before {
+  content: "\e913";
+}
+.icon-opciones:before {
+  content: "\e914";
+}
+.icon-categoria-inf:before {
+  content: "\e915";
+}
+.icon-recaudos:before {
+  content: "\e916";
+}
+.icon-novedades:before {
+  content: "\e917";
+}
+.icon-gestion:before {
+  content: "\e918";
+}
+.icon-informacion-basica:before {
+  content: "\e919";
+}
+.icon-dashboard:before {
+  content: "\e91a";
+}
+.icon-administracion:before {
+  content: "\e91b";
+}
+.icon-roles:before {
+  content: "\e91c";
+}
+.icon-arrow:before {
+  content: "\e91d";
+}
+.icon-usarios:before {
+  content: "\e91e";
+}
